@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Webpack 插件 | LAKCA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="什么是 Webpack 插件
+插件是对 javascript 代码进行逻辑处理的模块。
+
+Config 配置型插件
+NormalModuleReplacementPlugin 插件-模块替换
+
+
+123456new webpack.NormalModuleReplacementPlugin(    resourceRegExp,     newResource    // 如果是相对路径，则是相对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Webpack 插件">
+<meta property="og:url" content="https://longpeng.me/2016/09/17/Webpack-插件/index.html">
+<meta property="og:site_name" content="LAKCA">
+<meta property="og:description" content="什么是 Webpack 插件
+插件是对 javascript 代码进行逻辑处理的模块。
+
+Config 配置型插件
+NormalModuleReplacementPlugin 插件-模块替换
+
+
+123456new webpack.NormalModuleReplacementPlugin(    resourceRegExp,     newResource    // 如果是相对路径，则是相对">
+<meta property="og:updated_time" content="2016-09-18T13:45:31.180Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Webpack 插件">
+<meta name="twitter:description" content="什么是 Webpack 插件
+插件是对 javascript 代码进行逻辑处理的模块。
+
+Config 配置型插件
+NormalModuleReplacementPlugin 插件-模块替换
+
+
+123456new webpack.NormalModuleReplacementPlugin(    resourceRegExp,     newResource    // 如果是相对路径，则是相对">
+  
+    <link rel="alternate" href="/atom.xml" title="LAKCA" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">LAKCA</a>
+      </h1>
+      <p>&copy; 2016</p>
+      <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories/reading">Read</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://longpeng.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+<article id="post-Webpack-插件" class="article page-single article-type-post" itemscope itemprop="blogPost">
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/24/canvas/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          canvas
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/09/15/Webpack/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Webpack</div>
+    </a>
+  
+</nav>
+
+
+  
+  <div class="article-meta">
+    <a href="/2016/09/17/Webpack-插件/" class="article-date">
+  <time datetime="2016-09-17T02:39:58.000Z" itemprop="datePublished">2016-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Webpack 插件
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="什么是-Webpack-插件"><a href="#什么是-Webpack-插件" class="headerlink" title="什么是 Webpack 插件"></a>什么是 Webpack 插件</h3><blockquote>
+<p>插件是对 javascript 代码进行逻辑处理的模块。</p>
+</blockquote>
+<h3 id="Config-配置型插件"><a href="#Config-配置型插件" class="headerlink" title="Config 配置型插件"></a>Config 配置型插件</h3><ul>
+<li><h4 id="NormalModuleReplacementPlugin-插件-模块替换"><a href="#NormalModuleReplacementPlugin-插件-模块替换" class="headerlink" title="NormalModuleReplacementPlugin 插件-模块替换"></a><a href="#NormalModuleReplacementPlugin">NormalModuleReplacementPlugin 插件-模块替换</a></h4></li>
+</ul>
+<blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.NormalModuleReplacementPlugin(</div><div class="line">    resourceRegExp, </div><div class="line">    newResource</div><div class="line">    <span class="comment">// 如果是相对路径，则是相对于被替换模块的位置；</span></div><div class="line">    <span class="comment">// 也可以是一个函数。</span></div><div class="line">    )</div></pre></td></tr></table></figure>
+</blockquote>
+<ul>
+<li><h4 id="ContextReplacementPlugin-插件-上下文替换"><a href="#ContextReplacementPlugin-插件-上下文替换" class="headerlink" title="ContextReplacementPlugin 插件-上下文替换"></a><a href="#ContextReplacementPlugin">ContextReplacementPlugin 插件-上下文替换</a></h4></li>
+</ul>
+<blockquote>
+<p>关于 context，<a href="http://webpack.github.io/docs/context.html" target="_blank" rel="external">详见文档</a><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ContextReplacementPlugin(</div><div class="line">    resourceRegExp, </div><div class="line">    [newContentResource],</div><div class="line">    [newContentRecursive],</div><div class="line">    [newContentRegExp]</div><div class="line">    )</div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><h4 id="IgnorePlugin"><a href="#IgnorePlugin" class="headerlink" title="IgnorePlugin"></a><a href="#IgnorePlugin">IgnorePlugin</a></h4></li>
+</ul>
+<blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.IgnorePlugin(</div><div class="line">    requestRegExp, </div><div class="line">    [contextRegExp]</div><div class="line">    )</div></pre></td></tr></table></figure>
+</blockquote>
+<ul>
+<li><h4 id="PrefetchPlugin"><a href="#PrefetchPlugin" class="headerlink" title="PrefetchPlugin"></a><a href="#PrefetchPlugin">PrefetchPlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>预加载模块以提升性能。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.PrefetchPlugin(</div><div class="line">    [context], </div><div class="line">    <span class="comment">// 预加载的绝对路径</span></div><div class="line">    request</div><div class="line">    <span class="comment">// 引入模块的字符串</span></div><div class="line">    )</div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><h4 id="ResolverPlugin"><a href="#ResolverPlugin" class="headerlink" title="ResolverPlugin"></a><a href="#ResolverPlugin">ResolverPlugin</a></h4></li>
+</ul>
+<blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ResolverPlugin(</div><div class="line">    [plugins], </div><div class="line">    [types]</div><div class="line">    <span class="comment">// 可选值：normal, context, loader</span></div><div class="line">    )</div></pre></td></tr></table></figure>
+</blockquote>
+<ul>
+<li><h4 id="ResolverPlugin-FileAppendPlugin"><a href="#ResolverPlugin-FileAppendPlugin" class="headerlink" title="ResolverPlugin.FileAppendPlugin"></a><a href="#ResolverPlugin-FileAppendPlugin">ResolverPlugin.FileAppendPlugin</a></h4></li>
+</ul>
+<blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ResolverPlugin.FileAppendPlugin(</div><div class="line">    [plugins]</div><div class="line">    )</div></pre></td></tr></table></figure>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.ResolverPlugin([</div><div class="line">    <span class="keyword">new</span> webpack.ResolverPlugin.FileAppendPlugin(</div><div class="line">        [<span class="string">'/dist/compiled-moduled.js'</span>]</div><div class="line">    )</div><div class="line">])</div></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="EnvironmentPlugin"><a href="#EnvironmentPlugin" class="headerlink" title="EnvironmentPlugin"></a><a href="#EnvironmentPlugin">EnvironmentPlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>设置可以通过 process.env 获取的环境变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.EnvironmentPlugin([</div><div class="line">  <span class="string">"NODE_ENV"</span></div><div class="line">])</div><div class="line"><span class="comment">// e.g:</span></div><div class="line"><span class="keyword">var</span> env = process.env.NODE_ENV;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="Output-输出型插件"><a href="#Output-输出型插件" class="headerlink" title="Output 输出型插件"></a>Output 输出型插件</h3><ul>
+<li><h4 id="BannerPlugin"><a href="#BannerPlugin" class="headerlink" title="BannerPlugin"></a><a href="#BannerPlugin">BannerPlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>在打包后的块文件顶部添加额外内容。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.BannerPlugin(</div><div class="line">    banner, </div><div class="line">    <span class="comment">// 写在注释里面的字符串。</span></div><div class="line">    options</div><div class="line">    <span class="comment">// options.raw：设置为 true 时，则不会写在评论里。</span></div><div class="line">    <span class="comment">// options.entryOnly：是否只添加到入口文件。</span></div><div class="line">    )</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="Optimize-优化型插件"><a href="#Optimize-优化型插件" class="headerlink" title="Optimize 优化型插件"></a>Optimize 优化型插件</h3><ul>
+<li><h4 id="DedupePlugin"><a href="#DedupePlugin" class="headerlink" title="DedupePlugin"></a><a href="#DedupePlugin">DedupePlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>将文件去重以减小打包文件。去重后的模块只存在一个实例。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.DedupePlugin(</div><div class="line">    [files]</div><div class="line">)</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>不建议在开发模式中运用。</p>
+<ul>
+<li><h4 id="LimitChunkCountPlugin"><a href="#LimitChunkCountPlugin" class="headerlink" title="LimitChunkCountPlugin"></a><a href="#LimitChunkCountPlugin">LimitChunkCountPlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>设置生成的块文件的最大数目。超过的文件会合并起来。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.LimitChunkCountPlugin(</div><div class="line">    options</div><div class="line">    <span class="comment">// options.maxChunks</span></div><div class="line">    <span class="comment">// options.chunkOverhead</span></div><div class="line">    <span class="comment">// options.entryChunkMultiplicator</span></div><div class="line">)</div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><h4 id="MinChunkSizePlugin"><a href="#MinChunkSizePlugin" class="headerlink" title="MinChunkSizePlugin"></a><a href="#MinChunkSizePlugin">MinChunkSizePlugin</a></h4></li>
+</ul>
+<blockquote>
+<p>将阈值以下的块文件合并。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.MinChunkSizePlugin(</div><div class="line">    options</div><div class="line">    <span class="comment">// options.minChunkSize</span></div><div class="line">)</div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><h4 id="OccurrenceOrderPlugin"><a href="#OccurrenceOrderPlugin" class="headerlink" title="OccurrenceOrderPlugin"></a><a href="#OccurrenceOrderPlugin">OccurrenceOrderPlugin</a></h4></li>
+</ul>
+<blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> webpack.optimize.OccurrenceOrderPlugin(</div><div class="line">    preferEntry</div><div class="line">    <span class="comment">//</span></div><div class="line">)</div></pre></td></tr></table></figure>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://longpeng.me/2016/09/17/Webpack-插件/" data-id="citztc8z000020kg78bql3s9f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/24/canvas/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          canvas
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/09/15/Webpack/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Webpack</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+</section>
+        
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories/reading" class="mobile-nav-link">Read</a>
+  
+</nav>
+
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
